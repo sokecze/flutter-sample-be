@@ -1,0 +1,12 @@
+ktor:
+    application:
+        modules:
+            - example.com.ApplicationKt.module
+    deployment:
+        port: 80
+
+jwt:
+    secret: $JWT_SECRET
+    issuer: "http://example.com"
+    audience: "http://example.com"
+    realm: "Access to '/'"
